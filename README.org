@@ -1,16 +1,16 @@
-This repo gives a minimal example for calling a C function from python, using ctypes. A C function is defined in square.c. The python program callSquare.py
+ A C function is defined in square.c. The python program callSquare.py
  calls the C function.
 
 
 ** Commands
 
-1. Compile the C file into a shared lib
+1. Compile the C program into a shared lib
 
 #+BEGIN_EXAMPLE
 gcc square.c  -shared -o square.so
 #+END_EXAMPLE
 
-2. Invoke thhe function defined in square.so
+2. Invoke thhe function defined in the program
 
 #+BEGIN_EXAMPLE
 python invokeSquare.py
